@@ -1,2 +1,4 @@
 data/config.php
 mobile/data/config.php
+.DS_Store
+sftp-config.json
