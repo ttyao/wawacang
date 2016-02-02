@@ -12,7 +12,10 @@
  * $Author: liubo $
  * $Id: index.php 17217 2011-01-19 06:29:08Z liubo $
 */
-
+if (empty($_GET['admin'])) {
+    echo "under construction";
+    exit();
+}
 define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');

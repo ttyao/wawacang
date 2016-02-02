@@ -34,7 +34,7 @@ function SetHome(obj,url){
        }
   }
 }
- 
+
 //收藏本站 bbs.ecmoban.com
 function AddFavorite(title, url) {
   try {
@@ -50,58 +50,58 @@ catch (e) {
   }
 }
 </script>
- 
+
 <div class="top_nav">
 	<script type="text/javascript">
           //初始化主菜单
             function sw_nav(obj,tag)
             {
-     
+
             var DisSub = document.getElementById("DisSub_"+obj);
             var HandleLI= document.getElementById("HandleLI_"+obj);
                 if(tag==1)
                 {
                     DisSub.style.display = "block";
-             
-                    
+
+
                 }
                 else
                 {
                     DisSub.style.display = "none";
-                
+
                 }
-     
+
             }
-     
+
     </script>
-    <div class="block">     
-    
+    <div class="block">
+
         <ul class="top_bav_l">
         <li class="top_sc">
            <a href="javascript:void(0);" onclick="AddFavorite('我的网站',location.href)">收藏本站</a>
 </li>
             <li>关注我们：</li>
             <li style="border:none" class="menuPopup"  onMouseOver="sw_nav(1,1);" onMouseOut="sw_nav(1,0);">
-            <a id="HandleLI_1" href="javascript:;" title="微博" class="attention"></a> 
-            <div id=DisSub_1 class="top_nav_box  top_weibo"> 
+            <a id="HandleLI_1" href="javascript:;" title="微博" class="attention"></a>
+            <div id=DisSub_1 class="top_nav_box  top_weibo">
             <a href="http://e.weibo.com/ECMBT" target="_blank" title="新浪微博" class="top_weibo"></a>
-            <a href="http://e.t.qq.com/ecmoban_com" target="_blank" title="QQ微博" class="top_qq"></a> 
-            </div> 
-            </li> 
+            <a href="http://e.t.qq.com/ecmoban_com" target="_blank" title="QQ微博" class="top_qq"></a>
+            </div>
+            </li>
             <li class="menuPopup" onMouseOver="sw_nav(2,1);" onMouseOut="sw_nav(2,0);">
-            <a id="HandleLI_2" href="javascript:;" title="微信" class="top_weixin"></a> 
-            <div id="DisSub_2" class="weixinBox" style="display: none;"> 
-		
-            <img src="themes/ecmoban_meilishuo/images/weixin.png" style="width:150px; height:190px;  background:#0000CC" width="150" height="190"> 
-            </div> 
+            <a id="HandleLI_2" href="javascript:;" title="微信" class="top_weixin"></a>
+            <div id="DisSub_2" class="weixinBox" style="display: none;">
+
+            <img src="themes/ecmoban_meilishuo/images/weixin.png" style="width:150px; height:190px;  background:#0000CC" width="150" height="190">
+            </div>
             </li>
         </ul>
-    
+
         <div class="header_r">
-        
+
         <script type="text/javascript" src="js/transport_jquery.js"></script><script type="text/javascript" src="js/utils.js"></script>        <font id="ECS_MEMBERZONE" >554fcae493e564ee0dc75bdf2ebf94camember_info|a:1:{s:4:"name";s:11:"member_info";}554fcae493e564ee0dc75bdf2ebf94ca </font>
-     
-                  
+
+
         </div>
     </div>
 </div>
@@ -128,14 +128,14 @@ catch (e) {
   </div>
 </div>
 <div style="clear:both"></div>
- 
-<div class="menu_box clearfix"> 
-<div class="block"> 
+
+<div class="menu_box clearfix">
+<div class="block">
 <div class="menu">
   <a href="index.php" class="cur">首页<span></span></a>
-  </div> 
+  </div>
 </div>
-</div><style type="text/css"> 
+</div><style type="text/css">
 .container, .container *{margin:0; padding:0;}
 .container{width:100%; height:419px; overflow:hidden;position:relative;}
 .slider{position:absolute; width:100%; height:419px;}
@@ -178,22 +178,22 @@ catch (e) {
             <li style="background:url(data/afficheimg/20150608wadcfq.png) center 0 no-repeat; position:relative;"><a href="http://www.ecmoban.com/topic/shangchuang2/index.html" target="_blank"></a></li>
             <li style="background:url(data/afficheimg/20150608dnsqhz.png) center 0 no-repeat; position:relative;"><a href="http://www.ecmoban.com/topic/weixin/index.html" target="_blank"></a></li>
             <li style="background:url(data/afficheimg/20150608boezpt.png) center 0 no-repeat; position:relative;"><a href="http://www.ectouch.cn/" target="_blank"></a></li>
-      
+
   </ul>
   <ul class="num" id="idNum">
- 
-    
+
+
           <li>
-    1    </li> 
+    1    </li>
          <li>
-    2    </li> 
+    2    </li>
          <li>
-    3    </li> 
+    3    </li>
          <li>
-    4    </li> 
+    4    </li>
          <li>
-    5    </li> 
-        
+    5    </li>
+
   </ul>
 </div>
 <script type="text/javascript">
@@ -220,15 +220,15 @@ TransformView.prototype = {
 	if(parameter <= 0 || count <= 0) return;
 	var oContainer = $s(container), oSlider = $s(slider), oThis = this;
 	this.Index = 0;//当前索引
-	
+
 	this._timer = null;//定时器
 	this._slider = oSlider;//滑动对象
 	this._parameter = parameter;//切换参数
 	this._count = count || 0;//切换数量
 	this._target = 0;//目标参数
-	
+
 	this.SetOptions(options);
-	
+
 	this.Up = !!this.options.Up;
 	this.Step = Math.abs(this.options.Step);
 	this.Time = Math.abs(this.options.Time);
@@ -236,10 +236,10 @@ TransformView.prototype = {
 	this.Pause = Math.abs(this.options.Pause);
 	this.onStart = this.options.onStart;
 	this.onFinish = this.options.onFinish;
-	
+
 	oContainer.style.overflow = "hidden";
 	oContainer.style.position = "relative";
-	
+
 	oSlider.style.position = "absolute";
 	oSlider.style.top = oSlider.style.left = 0;
   },
@@ -261,7 +261,7 @@ TransformView.prototype = {
 	if(this.Index < 0){
 		this.Index = this._count - 1;
 	} else if (this.Index >= this._count){this.Index = 0;}
-	
+
 	this._target = -1 * this._parameter * this.Index;
 	this.onStart();
 	this.Move();
@@ -270,7 +270,7 @@ TransformView.prototype = {
   Move: function() {
 	clearTimeout(this._timer);
 	var oThis = this, style = this.Up ? "top" : "left", iNow = parseInt(this._slider.style[style]) || 0, iStep = this.GetStep(this._target, iNow);
-	
+
 	if (iStep != 0) {
 		this._slider.style[style] = (iNow + iStep) + "px";
 		this._timer = setTimeout(function(){oThis.Move();}, this.Time);
@@ -297,15 +297,15 @@ window.onload=function(){
 	function Each(list, fun){
 		for (var i = 0, len = list.length; i < len; i++) {fun(list[i], i);}
 	};
-	
+
 	var objs = $s("idNum").getElementsByTagName("li");
 	var obj_len = objs.length;
 	var tv = new TransformView("idTransformView", "idSlider", 419, obj_len, {
 		onStart : function(){ Each(objs, function(o, i){o.className = tv.Index == i ? "on" : "";}) }//按钮样式
 	});
-	
+
 	tv.Start();
-	
+
 	Each(objs, function(o, i){
 		o.onmouseover = function(){
 			o.className = "on";
@@ -319,18 +319,18 @@ window.onload=function(){
 			tv.Start();
 		}
 	})
-	
+
 	////////////////////////test2
-	
+
 //	var objs2 = $("idNum2").getElementsByTagName("li");
-//	
+//
 //	var tv2 = new TransformView("idTransformView2", "idSlider2",1200, 3, {
 //		onStart: function(){ Each(objs2, function(o, i){o.className = tv2.Index == i ? "on" : "";}) },//按钮样式
 //		Up: false
 //	});
-//	
+//
 //	tv2.Start();
-//	
+//
 //	Each(objs2, function(o, i){
 //		o.onmouseover = function(){
 //			o.className = "on";
@@ -344,7 +344,7 @@ window.onload=function(){
 //			tv2.Start();
 //		}
 //	})
-//	
+//
 //	$("idStop").onclick = function(){tv2.Auto = false; tv2.Stop();}
 //	$("idStart").onclick = function(){tv2.Auto = true; tv2.Start();}
 //	$("idNext").onclick = function(){tv2.Index++; tv2.Start();}
@@ -353,21 +353,21 @@ window.onload=function(){
 //	$("idSlow").onclick = function(){ if(++tv2.Step >= 10){tv2.Step = 10;} }
 //	$("idReduce").onclick = function(){ tv2.Pause-=1000; if(tv2.Pause <= 0){tv2.Pause = 0;} }
 //	$("idAdd").onclick = function(){ tv2.Pause+=1000; if(tv2.Pause >= 5000){tv2.Pause = 5000;} }
-//	
+//
 //	$("idReset").onclick = function(){
 //		tv2.Step = Math.abs(tv2.options.Step);
 //		tv2.Time = Math.abs(tv2.options.Time);
 //		tv2.Auto = !!tv2.options.Auto;
 //		tv2.Pause = Math.abs(tv2.options.Pause);
 //	}
-	
+
 }
 </script>
- 
- 
- 
- 
- 
+
+
+
+
+
  <div class="blank5"></div>
 <div class="blank"></div><div class="blank"></div>
 <div class="block clearfix">
@@ -389,15 +389,15 @@ window.onload=function(){
                 }
             }
 </script>
- 
-    
-    
+
+
+
   <div id="category_tree">
   <dl class="clearfix" style=" margin-top:-455px;" >
-      
+
 </dl>
 </div><div class="AreaL">
- 
+
 <div id="mallNews"    class="  box_1">
     <h3><span>站内快讯</span></h3>
     <div class="NewsList tc  " style="border-top:none">
@@ -420,34 +420,34 @@ window.onload=function(){
                 </ul>
     </div>
 </div>
-<div  class="blank"></div>  
+<div  class="blank"></div>
 554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:3:"159";s:3:"num";s:1:"1";}554fcae493e564ee0dc75bdf2ebf94ca
 <div class="blank"></div>
 </div>
 <div class="Arear">
- 
-</div> 
+
+</div>
   <div class="goodsBox_1">
-  
-  
-  
+
+
+
 <div class="xm-box">
 <h4 class="title"><span></span> <a class="more" href="category.php?id=21">更多</a></h4>
 <div id="show_hot_area" class="clearfix">
- 
+
           </div>
- 
- 
+
+
 </div>
 <div class="blank"></div>
-  </div> 
-  
+  </div>
+
     </div>
-  
-  
-  
- 
-    <a href="http://www.ecmoban.com" class="ecmoban">ecshop模板堂</a> 
+
+
+
+
+    <a href="http://www.ecmoban.com" class="ecmoban">ecshop模板堂</a>
 <div class="footer">
   <div class="foot_con">
     <div class="f_list service_info">
@@ -459,8 +459,8 @@ window.onload=function(){
         <li>周一至周日：09:00-22:00</li>
       </ol>
     </div>
-     
-     
+
+
         <div  class="f_list">
       <h4>新手上路 </h4>
       <ul>
@@ -469,8 +469,8 @@ window.onload=function(){
                 <li><a target="_blank" href="article.php?id=11" title="订购方式" >订购方式</a></li>
               </ul>
     </div>
-     
-     
+
+
         <div  class="f_list">
       <h4>手机常识 </h4>
       <ul>
@@ -479,16 +479,16 @@ window.onload=function(){
                 <li><a target="_blank" href="article.php?id=14" title="如何享受全国联保" >如何享受全国联保</a></li>
               </ul>
     </div>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
+
+
+
+
+
+
+
+
+
+
         <div class="f_list">
       <h4>关注我们</h4>
       <ul>
@@ -504,75 +504,74 @@ window.onload=function(){
       <h4>模板堂客户端下载</h4>
       <a class="client_pic" href="http://www.ecmoban.com/topic/ecmoban_app/" target="_blank"></a> </div>
     <div class="blank"></div>
-     
+
             <div >
       <dl class="sncompany box_1" style="text-align:left; border-left:none; border-right:none; background:none;">
-        <dd class=""> 
+        <dd class="">
         <span>友情链接：</span>
-       
-           
-           
-          <a href="http://www.maifou.net/" target="_blank" title="买否网">买否网</a> <span>|</span> 
-           
-          <a href="http://www.wdwd.com/" target="_blank" title="免费开独立网店">免费开独立网店</a>  
-           
-           
+
+
+
+          <a href="http://www.maifou.net/" target="_blank" title="买否网">买否网</a> <span>|</span>
+
+          <a href="http://www.wdwd.com/" target="_blank" title="免费开独立网店">免费开独立网店</a>
+
+
         </dd>
       </dl>
       </div>
-       
-       
+
+
       <div class="blank"></div>
-    
+
     <div id="bottomNav" class="rolling" >
     <h4 class="f_links">底部导航：</h4>
       <ul id="link_slide">
       <li>
-             
+
           </li>
           </ul>
     </div>
-    
-    
-    
-    
-    <div class="text" style="height:1px ; width:1px; overflow:hidden;">  
-       
-      Tel: 400-000-000 
-       
-       
-       
-       
-      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=123456&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:123456:4" height="16" border="0" alt="QQ" /> 123456</a> 
-       
-       
-       
-      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=234567&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:234567:4" height="16" border="0" alt="QQ" /> 234567</a> 
-       
-       
-       
-       
-      <a href="http://amos1.taobao.com/msg.ww?v=2&uid=123456789&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=123456789&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />123456789</a> 
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+
+
+
+
+    <div class="text" style="height:1px ; width:1px; overflow:hidden;">
+
+      Tel: 400-000-000
+
+
+
+
+      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=123456&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:123456:4" height="16" border="0" alt="QQ" /> 123456</a>
+
+
+
+      <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=234567&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:234567:4" height="16" border="0" alt="QQ" /> 234567</a>
+
+
+
+
+      <a href="http://amos1.taobao.com/msg.ww?v=2&uid=123456789&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=123456789&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />123456789</a>
+
+
+
+
+
+
+
+
+
+
       <br />
     </div>
     <div class="record"> &copy; 2005-2016 ECSHOP模板堂 版权所有，并保留所有权利。  &nbsp; <a href="#" target="_blank">电信与信息服务业务经营许可证100798号</a>&nbsp; <a href="#" target="_blank">企业法人营业执照</a>&nbsp; 京ICP备11031139号&nbsp; 京公网安备110108006045&nbsp;<br>
       客服邮箱：kf@mobantang.com&nbsp;&nbsp;客服电话：4000-021-758&nbsp; 文明办网文明上网举报电话：010-0000000 &nbsp; <a href="#" target="_blank">违法不良信息举报中心</a> </div>
   </div>
   <div class="blank10"></div>
-  <div align="center"><a href=" http://www.ecmoban.com" target="_blank"><img src="themes/ecmoban_meilishuo/images/ecmoban.gif" alt="ECShop模板" /></a></div>
 </div>
 <div class="blank"></div>
-  
+
 <link href="ecmoban_qq/images/qq.css" rel="stylesheet" type="text/css" />
 <div class="QQbox" id="divQQbox" style="width: 170px; ">
 <div class="Qlist" id="divOnline" onmouseout="hideMsgBox(event);" style="display: none; " onmouseover="OnlineOver();">
@@ -580,27 +579,27 @@ window.onload=function(){
     <div class="infobox">我们营业的时间<br>9:00-18:00</div>
     <div class="con">
         <ul>
- 
-  
-  
-  
-  
-  
+
+
+
+
+
+
                 <li><a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=123456&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:123456:4" height="16" border="0" alt="QQ" /> 123456</a> </li>
                          <li><a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=234567&amp;Site=ECSHOP模板堂&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:234567:4" height="16" border="0" alt="QQ" /> 234567</a> </li>
                               <li><a href="http://amos1.taobao.com/msg.ww?v=2&uid=123456789&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=123456789&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />123456789</a></li>
-                                                             
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
 	      <li> 服务热线: 400-000-000</li>
          </ul>
     </div>
@@ -649,24 +648,24 @@ document.getElementById("divMenu").style.display = "block";
 document.getElementById("divOnline").style.display = "none";
 }
 if(typeof(HTMLElement)!="undefined")    //给firefox定义contains()方法，ie下不起作用
-{   
-      HTMLElement.prototype.contains=function(obj)   
-      {   
+{
+      HTMLElement.prototype.contains=function(obj)
+      {
           while(obj!=null&&typeof(obj.tagName)!="undefind"){ //通过循环对比来判断是不是obj的父元素
-   　　　　if(obj==this) return true;   
+   　　　　if(obj==this) return true;
    　　　　obj=obj.parentNode;
-   　　}   
-          return false;   
-      };   
-}  
+   　　}
+          return false;
+      };
+}
 function hideMsgBox(theEvent){ //theEvent用来传入事件，Firefox的方式
 　 if (theEvent){
 　 var browser=navigator.userAgent; //取得浏览器属性
 　 if (browser.indexOf("Firefox")>0){ //如果是Firefox
 　　 if (document.getElementById('divOnline').contains(theEvent.relatedTarget)) { //如果是子元素
 　　 return; //结束函式
-} 
-} 
+}
+}
 if (browser.indexOf("MSIE")>0){ //如果是IE
 if (document.getElementById('divOnline').contains(event.toElement)) { //如果是子元素
 return; //结束函式
